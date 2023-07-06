@@ -2,8 +2,10 @@ import anime from "animejs";
 import React, { useEffect, useRef } from "react";
 
 // images
-const gw = "../../../../public/images/gw.webp";
-const groot = "../../../../public/images/groot.webp";
+const gw = "../../../assets/images/gw.webp";
+const groot = "../../../assets/images/groot.webp";
+
+// import lsls from "../../../assets/images/gw.webp";
 
 const Home = () => {
   const animationRef = useRef(null);
