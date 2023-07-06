@@ -2,10 +2,11 @@ import anime from "animejs";
 import React, { useEffect, useRef } from "react";
 
 // images
-const gw = "../../../assets/images/gw.webp";
-const groot = "../../../assets/images/groot.webp";
+// const gw = "../../../assets/images/gw.webp";
+// const groot = "../../../assets/images/groot.webp";
 
-// import lsls from "../../../assets/images/gw.webp";
+import gw from "../../../assets/images/gw.webp";
+import groot from "../../../assets/images/groot.webp";
 
 const Home = () => {
   const animationRef = useRef(null);
@@ -48,17 +49,14 @@ const Home = () => {
 
       <header className="max-w-screen-2xl bg-defaultBlack flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-y-hidden">
         <div className="absolute w-3/5 h-full bg-customOrange">&nbsp;</div>
-
         {/* image me */}
         <div className="bg-customOrange relative">
           <img src={gw} alt="" className="imgGw w-[30rem]" />
         </div>
-
         {/* image groot */}
         <div className="">
           <img src={groot} alt="" className="imgGroot w-[30rem]" />
         </div>
-
         {/* description */}
         <div className="mobileDesc absolute flex flex-col justify-center items-center w-full h-2/3 text-[#ffffff]">
           <p className="text-4xl font-bold">Hi, I'm Reza Bagus Pratama</p>
