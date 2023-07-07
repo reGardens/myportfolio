@@ -11,6 +11,9 @@ export default {
         customOrange: '#EF9826',
         defaultBlack: '#323233',
       },
+      fontFamily: {
+        futura: "Futura",
+      },
     },
   },
   plugins: [],
