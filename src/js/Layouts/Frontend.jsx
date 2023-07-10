@@ -4,11 +4,11 @@ import SmoothScroll from "../Components/SmoothScroll/SmoothScroll";
 
 const Frontend = () => {
   return (
-    <SmoothScroll>
-      <div className="overflow-x-hidden">
-        <Home />
-      </div>
-    </SmoothScroll>
+    // <SmoothScroll>
+    <div className="overflow-x-hidden">
+      <Home />
+    </div>
+    // </SmoothScroll>
   );
 };
 

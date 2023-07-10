@@ -4,6 +4,7 @@ import Frontend from "./js/Layouts/Frontend.jsx";
 import "./css/App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error404 from "./js/Error/Error404.jsx";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ParallaxProvider>
+      <RouterProvider router={router} />
+    </ParallaxProvider>
   </React.StrictMode>
 );

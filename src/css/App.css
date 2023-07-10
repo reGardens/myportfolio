@@ -6,3 +6,22 @@
   font-family: Futura;
   src: url("../assets/fonts/FuturaLT.ttf");
 }
+
+.bgSection {
+  background-image: url("../assets/images/background01.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.listMenu {
+  transform: perspective(90px) rotateX(60deg) scale(0.9);
+  box-shadow: 0px 20px 100px #555;
+  transition: 0.5s ease all;
+  width: 8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.listMenu:hover {
+  transform: rotate(0deg) scale(1) translateY(10px);
+}
