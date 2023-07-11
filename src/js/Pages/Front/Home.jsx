@@ -1,60 +1,25 @@
 import anime from "animejs";
 import React, { useEffect, useRef } from "react";
 import { useParallax, Parallax } from "react-scroll-parallax";
+// import { AnimeBGOrange } from "../../Components/Parallax/AnimeBGOrange";
 
 // images
 import gw from "../../../assets/images/gw.webp";
 import groot from "../../../assets/images/groot.webp";
+import grootMobile from "../../../assets/images/grootMobile.webp";
+import {
+  DescDesktop,
+  AnimeBGOrange,
+  ImageGroot,
+  ImageGw,
+  ImageGwMobile,
+  ImageGrootMobile,
+} from "../../Components/AnimationParallax";
+
+// icons
+import { AiOutlineHome } from "react-icons/ai";
 
 const Home = () => {
-  const animationRef = useRef(null);
-
-  useEffect(() => {
-    // s animation
-    animationRef.current = anime({
-      targets: ".dummyOrange",
-      translateX: [-30, 0],
-      loop: true,
-      direction: "alternate",
-      easing: "easeInOutSine",
-      duration: 3000,
-    });
-    animationRef.current = anime({
-      targets: ".imgGw",
-      translateX: [-250, 0],
-      translateY: [250, 0],
-      opacity: [0, 1],
-      scale: [0, 1],
-      easing: "easeInOutSine",
-      duration: 1000,
-    });
-    animationRef.current = anime({
-      targets: ".imgGroot",
-      translateX: [250, 0],
-      translateY: [250, 0],
-      opacity: [0, 1],
-      scale: [0, 1],
-      easing: "easeInOutSine",
-      duration: 1000,
-    });
-    animationRef.current = anime({
-      targets: ".mobileDesc",
-      translateY: [-250, 0],
-      opacity: [0, 1],
-      easing: "easeInOutSine",
-      duration: 900,
-    });
-    // e animation
-  }, []);
-
-  // s parallax effect
-  // const listMenu = useParallax({
-  //   rotateX: [0, 20],
-  //   opacity: [1, 0.3],
-  //   scale: [1.05, 1, "easeOutCubic"],
-  //   shouldAlwaysCompleteAnimation: true,
-  // });
-
   return (
     <div className="max-w-screen-2xl mx-auto font-futura">
       {/* seo */}
@@ -62,27 +27,27 @@ const Home = () => {
         Portfolio Reza Bagus Pratamaa
       </h1>
 
+      {/* banner dekstop */}
       {/* max-h-[35rem] */}
-      <header className="bg-defaultBlack flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-hidden">
-        <div className="dummyOrange absolute w-3/5 h-full bg-customOrange ove">
-          &nbsp;
-        </div>
+      <header className="bg-defaultBlack hidden md:flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-hidden">
+        <AnimeBGOrange />
+
         {/* image me */}
-        <Parallax speed={-20} translateX={[10, -20]}>
+        <ImageGw>
           <div className="bg-customOrange relative overflow-hidden">
             <img src={gw} alt="" className="imgGw w-[30rem]" />
           </div>
-        </Parallax>
+        </ImageGw>
 
         {/* image groot */}
-        <Parallax speed={-15} translateX={[-10, 20]}>
+        <ImageGroot>
           <div className="overflow-hidden">
             <img src={groot} alt="" className="imgGroot w-[30rem]" />
           </div>
-        </Parallax>
+        </ImageGroot>
 
         {/* description */}
-        <div className="absolute top-0 left-0 flex justify-center items-center w-full h-full text-[#ffffff]">
+        <DescDesktop>
           <Parallax speed={-10} easeOut>
             <div className="w-[27rem] flex flex-col gap-6">
               <p className="text-4xl font-bold">Hi, I'm Reza Bagus Pratama</p>
@@ -123,36 +88,96 @@ const Home = () => {
               </div>
             </div>
           </Parallax>
+        </DescDesktop>
+      </header>
+
+      {/* banner mobile */}
+      {/* max-h-[35rem] */}
+      <header className="block md:hidden bg-customOrange h-[28rem] relative overflow-hidden">
+        {/* image me mobile */}
+        <ImageGwMobile>
+          <img src={gw} alt="" />
+        </ImageGwMobile>
+
+        <ImageGrootMobile>
+          <img src={grootMobile} alt="" />
+        </ImageGrootMobile>
+
+        {/* description mobile */}
+        <div className="flex justify-center items-start w-full h-full text-[#ffffff]">
+          <Parallax translateY={[90, -20]}>
+            <div className="flex flex-col gap-3 text-center">
+              <p className="text-xl font-bold">Hi, I'm Reza Bagus Pratama</p>
+
+              <div className="">
+                <p className="text-3xl bg-defaultBlack shadow-lg font-bold p-2 text-customOrange">
+                  Front-End Web Developer
+                </p>
+              </div>
+
+              <p className="">
+                As a web developer, I am also a competitive programmer and tech
+                enthusiast.
+              </p>
+
+              <Parallax translateY={[60, -40]}>
+                <div className="flex w-[13rem] mx-auto flex-col-reverse justify-start items-center gap-3">
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1b6aiPsC2rgC1b9dSGY4WhGiZDzmlxlIK"
+                    className="bg-defaultBlack py-2 px-3 w-full rounded-md animate-bounce text-center shadow-lg"
+                  >
+                    <h3 className="">Download My Resume</h3>
+                  </a>
+
+                  <a
+                    href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=rezzabagus.rb@gmail.com"
+                    className="bg-defaultBlack w-full h-fit py-1 px-3 rounded-md text-left shadow-lg"
+                  >
+                    <h3 className="opacity">
+                      <strong className="tracking-[4px] opacity-75 text-[10px]">
+                        EMAIL
+                      </strong>{" "}
+                      <br /> rezzabagus.rb@gmail.com
+                    </h3>
+                  </a>
+                </div>
+              </Parallax>
+            </div>
+          </Parallax>
         </div>
       </header>
 
-      {/* ref={listMenu.ref} */}
-      {/* menu */}
+      {/* floating menu */}
       <div className="fixed bottom-4 left-0 w-full">
-        <ul className="flex justify-center gap-10">
-          <li className="listMenu">
-            <div className="cursor-pointer p-5 bg-customOrange rounded-md">
-              Home
+        <ul className="flex justify-center gap-1.5 md:gap-16">
+          <li className="listMenu w-[3.8rem] md:w-[8rem]">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+              <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
+              <span className="text-[12px] md:text-base">Home</span>
             </div>
           </li>
-          <li className="listMenu">
-            <div className="cursor-pointer p-5 bg-customOrange rounded-md">
-              Person
+          <li className="listMenu w-[3.8rem] md:w-[8rem]">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+              <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
+              <span className="text-[12px] md:text-base">Person</span>
             </div>
           </li>
-          <li className="listMenu">
-            <div className="cursor-pointer p-5 bg-customOrange rounded-md">
-              Apps
+          <li className="listMenu w-[3.8rem] md:w-[8rem]">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+              <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
+              <span className="text-[12px] md:text-base">Apps</span>
             </div>
           </li>
-          <li className="listMenu">
-            <div className="cursor-pointer p-5 bg-customOrange rounded-md">
-              Checklist
+          <li className="listMenu w-[3.8rem] md:w-[8rem]">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+              <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
+              <span className="text-[12px] md:text-base">Checklist</span>
             </div>
           </li>
-          <li className="listMenu">
-            <div className="cursor-pointer p-5 bg-customOrange rounded-md">
-              Wort
+          <li className="listMenu w-[3.8rem] md:w-[8rem]">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+              <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
+              <span className="text-[12px] md:text-base">Eperiance</span>
             </div>
           </li>
         </ul>
