@@ -139,3 +139,45 @@ export const ImageGrootMobile = ({ children }) => {
     </div>
   );
 };
+
+export const RibbonAboutMe = ({ children, onEnterView }) => {
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 1, // Adjust this threshold as needed
+    };
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          onEnterView();
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, [onEnterView]);
+
+  return (
+    <div
+      ref={elementRef}
+      className="flex flex-col justify-center px-0 sm:px-0 mb-4"
+    >
+      {children}
+    </div>
+  );
+};

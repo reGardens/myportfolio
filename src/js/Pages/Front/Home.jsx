@@ -1,5 +1,5 @@
 import anime from "animejs";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParallax, Parallax } from "react-scroll-parallax";
 // import { AnimeBGOrange } from "../../Components/Parallax/AnimeBGOrange";
 
@@ -22,6 +22,11 @@ import orangeRibbon from "../../../assets/images/orange-ribbon.png";
 
 // icons
 import { AiOutlineHome } from "react-icons/ai";
+
+import {
+  RibbonOrange,
+  RibbonOrangeReverse,
+} from "../../Components/ribbonOrange";
 
 const Home = () => {
   return (
@@ -97,7 +102,7 @@ const Home = () => {
 
       {/* banner mobile */}
       {/* max-h-[35rem] */}
-      <header className="block md:hidden h-[28rem] relative overflow-hidden">
+      <header className="block bg-customOrange md:hidden h-[32rem] relative overflow-hidden">
         {/* image me mobile */}
         <ImageGwMobile>
           <img src={gw} alt="" />
@@ -187,46 +192,30 @@ const Home = () => {
         </ul>
       </div>
 
-      <div className="bgSection h-full py-14 px-4 lg:px-14">
-        <div className="flex flex-col justify-center px-4 sm:px-0">
-          <div className="relative flex justify-start mb-4">
-            <div className="relative">
-              <img src={orangeRibbon} alt="" />
-              <p
-                className={`absolute top-0 right-5 text-[11px] sm:text-base text-right h-full flex items-center font-extrabold text-white tracking-widest`}
-              >
-                About Me
-              </p>
-            </div>
-          </div>
+      {/* about section */}
+      <div className="bg-defaultBlack h-full py-14 lg:py-28 text-defaultBlack">
+        {/* ribbon */}
+        <RibbonOrange />
+
+        <div className="bg-customOrange text-justify mb-4 lg:w-3/5 mx-4 lg:mx-auto">
+          <p className="py-10 px-4 lg:px-32 font-bold">
+            My name is Reza Bagus Pratama 24 years old from Indonesia, Central
+            Java, I am an IT frontend web developer with 2 years experience as a
+            freelance developer, I want to bring my work experience towards a
+            fullstack web developer, have made several projects such as asset
+            management system applications and POS point of sales and other
+            small-scale applications.
+          </p>
         </div>
 
-        <div className="grid  md:grid-cols-2 mx-auto overflow-hidden gap-4 md:w-3/4">
-          <div className="rounded-lg overflow-hidden">
-            <img
-              src={phoneFrame}
-              alt=""
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          <div className="border-[3px] border-customOrange mt-5 text-justify text-white">
-            <p className="text-4xl -translate-y-6 translate-x-3 leading-none pb-3 font-semibold">
-              About Me
-            </p>
-            <p className="p-3 bg-defaultBlack -translate-y-3">
-              My name is Reza Bagus Pratama 24 years old from Indonesia, Central
-              Java, I am an IT frontend web developer with 2 years experience as
-              a freelance developer, I want to bring my work experience towards
-              a fullstack web developer, have made several projects such as
-              asset management system applications and POS point of sales and
-              other small-scale applications.
-            </p>
-          </div>
-        </div>
+        {/* ribbon reverse */}
+        <RibbonOrangeReverse />
       </div>
 
-      {/* <div className="bgSection h-screen"></div> */}
+      {/* skills */}
+      <div className=""></div>
+
+      <div className="bgSection h-screen"></div>
     </div>
   );
 };
