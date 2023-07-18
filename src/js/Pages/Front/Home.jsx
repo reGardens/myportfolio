@@ -33,7 +33,7 @@ const Home = () => {
     <div className="max-w-screen-2xl mx-auto font-futura">
       {/* seo */}
       <h1 className="text-center absolute mx-auto opacity-0">
-        Portfolio Reza Bagus Pratamaa
+        Portfolio Reza Bagus Pratama
       </h1>
 
       {/* banner dekstop */}
