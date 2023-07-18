@@ -34,7 +34,7 @@ const Home = () => {
       {/* seo */}
       <h1 className="text-center absolute mx-auto opacity-0">
         Portfolio Reza Bagus Pratama
-        reza-1
+        reza-1 test
       </h1>
 
       {/* banner dekstop */}
