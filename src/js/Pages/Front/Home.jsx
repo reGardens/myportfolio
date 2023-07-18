@@ -35,6 +35,9 @@ const Home = () => {
       <h1 className="text-center absolute mx-auto opacity-0">
         Portfolio Reza Bagus Pratamaaa
         reza-2 test reza-2
+        Portfolio Reza Bagus Pratama
+        reza-4 test
+        reza-3 test reza-3 test
       </h1>
 
       {/* banner dekstop */}
