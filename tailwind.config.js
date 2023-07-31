@@ -14,6 +14,13 @@ export default {
       fontFamily: {
         futura: "Futura",
       },
+      fontSize: {
+        title: ['2.25rem', {
+          lineHeight: '2.5rem',
+          fontWeight: '800',
+          letterSpacing: '0.1em',
+        }]
+      }
     },
   },
   plugins: [],

@@ -17,8 +17,21 @@ import {
 import gw from "../../../assets/images/gw.webp";
 import groot from "../../../assets/images/groot.webp";
 import grootMobile from "../../../assets/images/grootMobile.webp";
-import phoneFrame from "../../../assets/images/frame-iphone.webp";
-import orangeRibbon from "../../../assets/images/orange-ribbon.png";
+import html from "../../../assets/icons/html.png";
+import css from "../../../assets/icons/css3.png";
+import js from "../../../assets/icons/js.png";
+import php from "../../../assets/icons/php.png";
+import bootstrap from "../../../assets/icons/bootstrap.png";
+import tailwindcss from "../../../assets/icons/tailwindcss.png";
+import sass from "../../../assets/icons/sass.png";
+import vuejs from "../../../assets/icons/vuejs.png";
+import reactjs from "../../../assets/icons/reactjs.png";
+import mysql from "../../../assets/icons/mysql.png";
+import codeigniter from "../../../assets/icons/codeigniter.png";
+import laravel from "../../../assets/icons/laravel.png";
+import git from "../../../assets/icons/git.png";
+// import phoneFrame from "../../../assets/images/frame-iphone.webp";
+// import orangeRibbon from "../../../assets/images/orange-ribbon.png";
 
 // icons
 import { AiOutlineHome } from "react-icons/ai";
@@ -33,13 +46,10 @@ const Home = () => {
     <div className="max-w-screen-2xl mx-auto font-futura">
       {/* seo */}
       <h1 className="text-center absolute mx-auto opacity-0">
-        Portfolio Reza Bagus Pratama
-        reza-4 test
-        reza-3 test reza-3 test
+        Portfolio Reza Bagus Pratama reza-4 test reza-3 test reza-3 test
       </h1>
 
       {/* banner dekstop */}
-      {/* max-h-[35rem] */}
       <header className="bg-defaultBlack hidden md:flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-hidden">
         <AnimeBGOrange />
 
@@ -64,7 +74,7 @@ const Home = () => {
               <p className="text-4xl font-bold">Hi, I'm Reza Bagus Pratama</p>
 
               <div className="">
-                <p className="text-4xl bg-defaultBlack shadow-lg rounded-md font-bold p-2 text-customOrange">
+                <p className="text-4xl bg-defaultBlack shadow-lg font-bold p-2 text-customOrange">
                   Front-End Web Developer
                 </p>
               </div>
@@ -78,7 +88,7 @@ const Home = () => {
               <div className="flex justify-start gap-7">
                 <a
                   href="https://drive.google.com/uc?export=download&id=1b6aiPsC2rgC1b9dSGY4WhGiZDzmlxlIK"
-                  className="bg-defaultBlack py-1 px-3 rounded-md animate-bounce text-center shadow-lg"
+                  className="bg-defaultBlack py-1 px-3 animate-bounce text-center shadow-lg"
                 >
                   <h3>
                     Download <br /> My Resume
@@ -87,7 +97,7 @@ const Home = () => {
 
                 <a
                   href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=rezzabagus.rb@gmail.com"
-                  className="bg-customOrange py-1 px-3 rounded-md text-center shadow-lg"
+                  className="bg-customOrange py-1 px-3 text-center shadow-lg"
                 >
                   <h3 className="opacity">
                     <strong className="tracking-widest text-[10px]">
@@ -103,7 +113,6 @@ const Home = () => {
       </header>
 
       {/* banner mobile */}
-      {/* max-h-[35rem] */}
       <header className="block bg-customOrange md:hidden h-[32rem] relative overflow-hidden">
         {/* image me mobile */}
         <ImageGwMobile>
@@ -159,34 +168,34 @@ const Home = () => {
       </header>
 
       {/* floating menu */}
-      <div className="fixed bottom-4 left-0 w-full z-50">
+      <div className="fixed bottom-2 left-0 w-full z-50">
         <ul className="flex justify-center gap-1.5 md:gap-16">
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Home</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Person</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Apps</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Checklist</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Eperiance</span>
             </div>
@@ -215,9 +224,222 @@ const Home = () => {
       </div>
 
       {/* skills */}
-      <div className=""></div>
+      <div className="bg-defaultBlack mb-28 py-14 lg:pb-28 px-14 lg:px-28">
+        <div className="text-white py-4 mb-12">
+          <p className="text-center font-bold text-title">Skills</p>
+        </div>
 
-      <div className="bgSection h-screen"></div>
+        <div className="grid grid-cols-2 gap-x-10 relative">
+          {/* animation background gradient custom in app.css */}
+          <div className="absolute transition-all ease-in-out flex justify-center items-center w-full h-full top-0 left-0">
+            <div className="gradient bg-customOrange">&nbsp;</div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <p className="mb-2 font-bold">Googling</p>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 100 + "%" }}
+              >
+                100%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={html} alt="" className="inline w-[30px]" />
+              {/* <p className="font-bold inline">HTML</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 80 + "%" }}
+              >
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={css} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">Javascript</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 80 + "%" }}
+              >
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={php} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">PHP</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 60 + "%" }}
+              >
+                60%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={bootstrap} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">Bootstrap</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 85 + "%" }}
+              >
+                85%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={tailwindcss} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">Tailwind</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 85 + "%" }}
+              >
+                85%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={sass} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">SASS/SCSS</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 70 + "%" }}
+              >
+                70%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={vuejs} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">VueJS</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 40 + "%" }}
+              >
+                40%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={reactjs} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">ReactJS</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 85 + "%" }}
+              >
+                85%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={mysql} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">MySQL</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 60 + "%" }}
+              >
+                60%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={codeigniter} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">Codeigniter</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 50 + "%" }}
+              >
+                50%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3">
+            <div className="mb-2">
+              <img src={laravel} alt="" className="inline w-[30px]" />
+              {/* <p className="mb-2 font-bold">Laravel</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 50 + "%" }}
+              >
+                50%
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white glassmorphism py-2 px-3 col-span-2">
+          <div className="mb-2">
+              <img src={git} alt="" className="inline w-[30px]" />
+            {/* <p className="mb-2 font-bold">GIT</p> */}
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-customOrange text-xs font-bold text-defaultBlack text-center p-0.5 leading-none rounded-full"
+                style={{ width: 80 + "%" }}
+              >
+                80%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
