@@ -183,7 +183,7 @@ const Home = () => {
                 enthusiast.
               </p>
 
-              <Parallax translateY={[50, -30]}>
+              <Parallax translateY={[150, -30]}>
                 <div className="flex w-[13rem] mx-auto flex-col-reverse justify-start items-center gap-3">
                   <a
                     href="https://drive.google.com/uc?export=download&id=1b6aiPsC2rgC1b9dSGY4WhGiZDzmlxlIK"
