@@ -45,25 +45,44 @@
 }
 /* e gradient generic */
 
-.glassmorphismTitle {
-  /* background: rgba(239, 152, 38, 0.32); */
+/* .glassmorphismTitle {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.9px);
   -webkit-backdrop-filter: blur(4.9px);
   transition: 0.2s ease-in;
-}
-
-.glassmorphism {
-  /* border-radius: 16px; */
+} */
+/* .glassmorphism {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.9px);
   -webkit-backdrop-filter: blur(4.9px);
   transition: 0.2s ease-in;
   &:hover {
-    /* background: black; */
     background: rgba(239, 152, 38, 0.32);
   }
+} */
+
+/* .animate-progres::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(233, 233, 233, 1) 0,
+    rgba(233, 233, 233, 0.9) 50%,
+    rgba(233, 233, 233, 0.8) 100%
+  );
+  animation: shimmer 2s ease-out infinite;
 }
+@keyframes shimmer {
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+} */
 
 .listMenu {
   transform: perspective(90px) rotateX(60deg) scale(0.9);
