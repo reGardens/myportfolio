@@ -14,11 +14,26 @@ import {
 } from "../../Components/AnimationParallax";
 
 // images
+// import google from "../../../assets/icons/Google.png";
 import gw from "../../../assets/images/gw.webp";
 import groot from "../../../assets/images/groot.webp";
 import grootMobile from "../../../assets/images/grootMobile.webp";
-import phoneFrame from "../../../assets/images/frame-iphone.webp";
-import orangeRibbon from "../../../assets/images/orange-ribbon.png";
+import html from "../../../assets/icons/html.png";
+import css from "../../../assets/icons/css3.png";
+import js from "../../../assets/icons/js.png";
+import php from "../../../assets/icons/php.png";
+import bootstrap from "../../../assets/icons/bootstrap.png";
+import tailwindcss from "../../../assets/icons/tailwindcss.png";
+import sass from "../../../assets/icons/sass.png";
+import vuejs from "../../../assets/icons/vuejs.png";
+import reactjs from "../../../assets/icons/reactjs.png";
+import mysql from "../../../assets/icons/mysql.png";
+import codeigniter from "../../../assets/icons/codeigniter.png";
+import laravel from "../../../assets/icons/laravel.png";
+import git from "../../../assets/icons/git.png";
+import fjbDesktop from "../../../assets/thumb/fjb-desktop.png";
+import fjbLaptop from "../../../assets/thumb/fjb-laptop.png";
+import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 
 // icons
 import { AiOutlineHome } from "react-icons/ai";
@@ -29,19 +44,56 @@ import {
 } from "../../Components/ribbonOrange";
 
 const Home = () => {
+  const datasSkill = [
+    { img: null },
+    { img: html },
+    { img: css },
+    { img: js },
+    { img: php },
+    { img: bootstrap },
+    { img: tailwindcss },
+    { img: sass },
+    { img: vuejs },
+    { img: reactjs },
+    { img: mysql },
+    { img: codeigniter },
+    { img: laravel },
+    { img: git },
+  ];
+
+  const project = [
+    {
+      name: "Festifal Jajanan Bango",
+      description:
+        "Maintenance of the culinary festival website, using jQuery, codeigniter, containing a list of Indonesian culinary delights so that visitors can see what is available at fjb this year.",
+      imgDekstop: fjbDesktop,
+      imgLaptop: fjbLaptop,
+      imgMobile: fjbMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.warisankuliner.com/fjb",
+      // hashtag: [{''}]
+    },
+    {
+      name: "Festifal Jajanan Bango",
+      description:
+        "Maintenance of the culinary festival website, using jQuery, codeigniter, containing a list of Indonesian culinary delights so that visitors can see what is available at fjb this year.",
+      imgDekstop: fjbDesktop,
+      imgLaptop: fjbLaptop,
+      imgMobile: fjbMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.warisankuliner.com/fjb",
+      // hashtag: [{''}]
+    },
+  ];
+
   return (
     <div className="max-w-screen-2xl mx-auto font-futura">
       {/* seo */}
       <h1 className="text-center absolute mx-auto opacity-0">
-        Portfolio Reza Bagus Pratamaaa
-        reza-2 test reza-2
         Portfolio Reza Bagus Pratama
-        reza-4 test
-        reza-3 test reza-3 test
       </h1>
 
-      {/* banner dekstop */}
-      {/* max-h-[35rem] */}
+      {/* Banner Dekstop */}
       <header className="bg-defaultBlack hidden md:flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-hidden">
         <AnimeBGOrange />
 
@@ -66,7 +118,7 @@ const Home = () => {
               <p className="text-4xl font-bold">Hi, I'm Reza Bagus Pratama</p>
 
               <div className="">
-                <p className="text-4xl bg-defaultBlack shadow-lg rounded-md font-bold p-2 text-customOrange">
+                <p className="text-4xl bg-defaultBlack shadow-lg font-bold p-2 text-customOrange">
                   Front-End Web Developer
                 </p>
               </div>
@@ -80,7 +132,7 @@ const Home = () => {
               <div className="flex justify-start gap-7">
                 <a
                   href="https://drive.google.com/uc?export=download&id=1b6aiPsC2rgC1b9dSGY4WhGiZDzmlxlIK"
-                  className="bg-defaultBlack py-1 px-3 rounded-md animate-bounce text-center shadow-lg"
+                  className="bg-defaultBlack py-1 px-3 animate-bounce text-center shadow-lg"
                 >
                   <h3>
                     Download <br /> My Resume
@@ -89,7 +141,7 @@ const Home = () => {
 
                 <a
                   href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=rezzabagus.rb@gmail.com"
-                  className="bg-customOrange py-1 px-3 rounded-md text-center shadow-lg"
+                  className="bg-customOrange py-1 px-3 text-center shadow-lg"
                 >
                   <h3 className="opacity">
                     <strong className="tracking-widest text-[10px]">
@@ -104,8 +156,7 @@ const Home = () => {
         </DescDesktop>
       </header>
 
-      {/* banner mobile */}
-      {/* max-h-[35rem] */}
+      {/* Banner Mobile */}
       <header className="block bg-customOrange md:hidden h-[32rem] relative overflow-hidden">
         {/* image me mobile */}
         <ImageGwMobile>
@@ -160,35 +211,35 @@ const Home = () => {
         </div>
       </header>
 
-      {/* floating menu */}
-      <div className="fixed bottom-4 left-0 w-full z-50">
+      {/* Floating Menu */}
+      <div className="fixed bottom-2 left-0 w-full z-50">
         <ul className="flex justify-center gap-1.5 md:gap-16">
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Home</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Person</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Apps</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Checklist</span>
             </div>
           </li>
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
-            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange rounded-md">
+            <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
               <AiOutlineHome className="w-[20px] md:w-[30px] md:h-[30px]" />
               <span className="text-[12px] md:text-base">Eperiance</span>
             </div>
@@ -196,14 +247,14 @@ const Home = () => {
         </ul>
       </div>
 
-      {/* about section */}
+      {/* About Section */}
       <div className="bg-defaultBlack h-full py-14 lg:py-28 text-defaultBlack">
         {/* ribbon */}
         <RibbonOrange />
 
         <div className="bg-customOrange text-justify mb-4 lg:w-3/5 mx-4 lg:mx-auto">
           <p className="py-10 px-4 lg:px-32 font-bold">
-            My name is Reza Bagus Pratama 24 years old from Indonesia, Central
+            My name is Reza Bagus Pratama 25 years old from Indonesia, Central
             Java, I am an IT frontend web developer with 2 years experience as a
             freelance developer, I want to bring my work experience towards a
             fullstack web developer, have made several projects such as asset
@@ -216,10 +267,92 @@ const Home = () => {
         <RibbonOrangeReverse />
       </div>
 
-      {/* skills */}
-      <div className=""></div>
+      {/* Skills */}
+      <div className="bg-defaultBlack py-28 lg:pb-28 px-4 lg:px-28">
+        <div className="text-white relative z-10 py-4 mb-12">
+          <p className="text-center font-bold text-title">Skills</p>
+        </div>
 
-      <div className="bgSection h-screen"></div>
+        <div className="flex relative">
+          {/* animation background gradient custom in app.css */}
+          <div className="absolute transition-all ease-in-out flex justify-center items-center w-full h-full top-0 left-0">
+            <div className="gradient bg-customOrange">&nbsp;</div>
+          </div>
+
+          <div className="mx-auto md:w-2/3 flex flex-wrap justify-center items-center gap-5 z-10">
+            {datasSkill.map((data, index) => {
+              return (
+                <div key={index} className="">
+                  {data.img === null ? (
+                    <p className="mb-2 font-bold text-xs md:text-base text-white">
+                      Googling
+                    </p>
+                  ) : (
+                    <img src={data.img} alt="" className="" />
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Project */}
+      <div className="bg-defaultBlack text-white py-14 lg:pb-28 pt-18 lg:pt-36 px-4 lg:px-28">
+        <div className="py-4 mb-6 lg:mb-12">
+          <p className="text-center font-bold text-title">Project</p>
+        </div>
+
+        <div className="grid gap-28">
+          {project.map((pro, index) => {
+            return (
+              <div key={index}>
+                <div className="mb-10">
+                  <p className="text-xl font-bold md:text-title leading-loose text-customOrange">
+                    {pro.name}
+                  </p>
+                  <p className="text-xs text-justify md:text-left md:text-base">{pro.description}</p>
+                </div>
+
+                <div className="flex flex-col md:flex-row items-end justify-center gap-5 w-full">
+                  <div className="md:basis-[450px]">
+                    <img
+                      src={pro.imgDekstop}
+                      alt=""
+                      className="w-full h-full drop-shadow-2xl "
+                    />
+                  </div>
+                  <div className="md:basis-[460px]">
+                    <img
+                      src={pro.imgLaptop}
+                      alt=""
+                      className="w-full h-full drop-shadow-2xl"
+                    />
+                  </div>
+                  <div className="md:basis-[120px] w-full h-full">
+                    <img
+                      src={pro.imgMobile}
+                      alt=""
+                      className="object-contain drop-shadow-2xl h-[20rem] w-full md:h-full"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex justify-center mt-12">
+                  <a
+                    href={pro.url}
+                    className="border-[1px] border-customOrange hover:border-transparent hover:text-customOrange transition-colors"
+                  >
+                    <p className="py-3 px-6 md:px-7 text-xs md:text-base leading-none hover:font-semibold">
+                      Visit Site
+                    </p>
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

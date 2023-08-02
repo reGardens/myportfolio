@@ -36,7 +36,7 @@ export const RibbonOrange = () => {
             <img src={orangeRibbon} alt="" className="h-full" />
           </div>
           <p
-            className={`absolute top-0 right-5 text-4xl text-right h-full flex items-center font-extrabold tracking-widest`}
+            className={`absolute top-0 right-5 text-title text-right h-full flex items-center`}
           >
             About Me
           </p>

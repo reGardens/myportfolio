@@ -27,12 +27,12 @@ export const ImageGw = ({ children }) => {
   useEffect(() => {
     animationRef.current = anime({
       targets: ".imgGw",
-      translateX: [-250, 0],
-      translateY: [250, 0],
+      translateX: [-50, 0],
+      translateY: [50, 0],
       opacity: [0, 1],
-      scale: [0, 1],
+      // scale: [0, 1],
       easing: "easeInOutSine",
-      duration: 1000,
+      duration: 1200,
     });
   }, []);
 
@@ -48,12 +48,12 @@ export const ImageGroot = ({ children }) => {
   useEffect(() => {
     animationRef.current = anime({
       targets: ".imgGroot",
-      translateX: [250, 0],
-      translateY: [250, 0],
+      translateX: [50, 0],
+      translateY: [50, 0],
       opacity: [0, 1],
-      scale: [0, 1],
+      // scale: [0, 1],
       easing: "easeInOutSine",
-      duration: 1000,
+      duration: 1200,
     });
   }, []);
 
