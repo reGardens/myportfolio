@@ -90,7 +90,7 @@ const Home = () => {
     <div className="max-w-screen-2xl mx-auto font-futura">
       {/* seo */}
       <h1 className="text-center absolute mx-auto opacity-0">
-        Portfolio Reza Bagus Pratama reza-4 test reza-3 test reza-3 test
+        Portfolio Reza Bagus Pratama
       </h1>
 
       {/* Banner Dekstop */}
@@ -157,7 +157,7 @@ const Home = () => {
       </header>
 
       {/* Banner Mobile */}
-      <header className="block bg-customOrange md:hidden h-[32rem] relative overflow-hidden">
+      <header className="block bg-customOrange md:hidden min-h-[37rem] h-full relative overflow-hidden">
         {/* image me mobile */}
         <ImageGwMobile>
           <img src={gw} alt="" />
@@ -167,7 +167,6 @@ const Home = () => {
           <img src={grootMobile} alt="" />
         </ImageGrootMobile>
 
-        {/* description mobile */}
         <div className="flex justify-center items-start w-full h-full text-[#ffffff]">
           <Parallax translateY={[90, -20]}>
             <div className="flex flex-col gap-3 text-center">
@@ -248,7 +247,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="bg-defaultBlack h-full py-14 lg:py-28 text-defaultBlack">
+      <div className="bg-defaultBlack h-full lg:py-28 pb-14 pt-28 text-defaultBlack">
         {/* ribbon */}
         <RibbonOrange />
 
@@ -268,7 +267,7 @@ const Home = () => {
       </div>
 
       {/* Skills */}
-      <div className="bg-defaultBlack py-28 lg:pb-28 px-4 lg:px-28">
+      <div className="bg-defaultBlack py-14 lg:pb-28 px-4 lg:px-28">
         <div className="text-white relative z-10 py-4 mb-12">
           <p className="text-center font-bold text-title">Skills</p>
         </div>
