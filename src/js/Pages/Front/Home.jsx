@@ -183,7 +183,7 @@ const Home = () => {
                 enthusiast.
               </p>
 
-              <Parallax translateY={[50, -30]}>
+              <Parallax translateY={[150, -30]}>
                 <div className="flex w-[13rem] mx-auto flex-col-reverse justify-start items-center gap-3">
                   <a
                     href="https://drive.google.com/uc?export=download&id=1b6aiPsC2rgC1b9dSGY4WhGiZDzmlxlIK"
@@ -307,10 +307,10 @@ const Home = () => {
             return (
               <div key={index}>
                 <div className="mb-10">
-                  <p className="text-xl font-bold md:text-title leading-loose text-customOrange">
+                  <p className="text-2xl font-bold md:text-title leading-loose text-customOrange">
                     {pro.name}
                   </p>
-                  <p className="text-xs text-justify md:text-left md:text-base">{pro.description}</p>
+                  <p className="text-sm text-justify md:text-left md:text-base">{pro.description}</p>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-end justify-center gap-5 w-full">
