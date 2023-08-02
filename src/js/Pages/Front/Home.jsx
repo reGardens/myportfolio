@@ -307,10 +307,10 @@ const Home = () => {
             return (
               <div key={index}>
                 <div className="mb-10">
-                  <p className="text-xl font-bold md:text-title leading-loose text-customOrange">
+                  <p className="text-2xl font-bold md:text-title leading-loose text-customOrange">
                     {pro.name}
                   </p>
-                  <p className="text-xs text-justify md:text-left md:text-base">{pro.description}</p>
+                  <p className="text-sm text-justify md:text-left md:text-base">{pro.description}</p>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-end justify-center gap-5 w-full">
