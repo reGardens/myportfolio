@@ -32,8 +32,14 @@ import codeigniter from "../../../assets/icons/codeigniter.png";
 import laravel from "../../../assets/icons/laravel.png";
 import git from "../../../assets/icons/git.png";
 import fjbDesktop from "../../../assets/thumb/fjb-desktop.png";
-import fjbLaptop from "../../../assets/thumb/fjb-laptop.png";
+import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
+import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
+import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
+import danamonOptimalMobile from "../../../assets/thumb/danamonOptimal-mobile.png";
+import sahurDesktop from "../../../assets/thumb/semurSahur-dekstop.png";
+import sahurTablet from "../../../assets/thumb/semurSahur-tablet.png";
+import sahurMobile from "../../../assets/thumb/semurSahur-mobile.png";
 
 // icons
 import { AiOutlineHome } from "react-icons/ai";
@@ -66,23 +72,43 @@ const Home = () => {
       name: "Festifal Jajanan Bango",
       description:
         "Maintenance of the culinary festival website, using jQuery, codeigniter, containing a list of Indonesian culinary delights so that visitors can see what is available at fjb this year.",
-      imgDekstop: fjbDesktop,
-      imgLaptop: fjbLaptop,
-      imgMobile: fjbMobile,
+      dekstopView: fjbDesktop,
+      tabletView: fjbTablet,
+      mobileView: fjbMobile,
       modalDesc: "Bango Culinary Project 2022",
       url: "https://www.warisankuliner.com/fjb",
-      // hashtag: [{''}]
+      hashtags: [
+        { link: "jQuery", name: "jQuery" },
+        { link: "/", name: "codeigniter" },
+      ],
     },
     {
-      name: "Festifal Jajanan Bango",
+      name: "Danamon Optimal",
       description:
-        "Maintenance of the culinary festival website, using jQuery, codeigniter, containing a list of Indonesian culinary delights so that visitors can see what is available at fjb this year.",
-      imgDekstop: fjbDesktop,
-      imgLaptop: fjbLaptop,
-      imgMobile: fjbMobile,
+        "",
+      dekstopView: danamonOptimalDesktop,
+      tabletView: danamonOptimalTablet,
+      mobileView: danamonOptimalMobile,
       modalDesc: "Bango Culinary Project 2022",
-      url: "https://www.warisankuliner.com/fjb",
-      // hashtag: [{''}]
+      url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
+      hashtags: [
+        { link: "Bootstrap", name: "Bootstrap" },
+      ],
+    },
+    {
+      name: "30 Resep Semur Semangatkan Sahur",
+      description:
+        "Is a recommendation website for special dishes in the month of Ramadan, generated from Instagram stories for a full review",
+      dekstopView: sahurDesktop,
+      tabletView: sahurTablet,
+      mobileView: sahurMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.bango.co.id/home.html",
+      hashtags: [
+        { link: "jQuery", name: "jQuery" },
+        { link: "/", name: "codeigniter" },
+        { link: "miappi", name: "miappi" },
+      ],
     },
   ];
 
@@ -306,31 +332,48 @@ const Home = () => {
           {project.map((pro, index) => {
             return (
               <div key={index}>
-                <div className="mb-10">
+                <div className="mb-10 grid gap-2">
                   <p className="text-2xl font-bold md:text-title leading-loose text-customOrange">
                     {pro.name}
                   </p>
-                  <p className="text-sm text-justify md:text-left md:text-base">{pro.description}</p>
+                  <p className="text-sm text-justify md:text-left md:text-base">
+                    {pro.description}
+                  </p>
+
+                  {/* hashtag */}
+                  <div className="flex gap-2 text-defaultBlack mt-2 opacity-70">
+                    {pro.hashtags?.map((resu, i) => {
+                      return (
+                        <a
+                          key={i}
+                          href={resu.link}
+                          className="bg-white hover:bg-customOrange transition-colors px-3 py-1.5 rounded-xl leading-none font-semibold"
+                        >
+                          {resu.name}
+                        </a>
+                      );
+                    })}
+                  </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-end justify-center gap-5 w-full">
+                <div className="flex flex-col md:flex-row items-end justify-center gap-10 w-full">
                   <div className="md:basis-[450px]">
                     <img
-                      src={pro.imgDekstop}
+                      src={pro.dekstopView}
                       alt=""
                       className="w-full h-full drop-shadow-2xl "
                     />
                   </div>
-                  <div className="md:basis-[460px]">
+                  <div className="md:basis-[260px]">
                     <img
-                      src={pro.imgLaptop}
+                      src={pro.tabletView}
                       alt=""
                       className="w-full h-full drop-shadow-2xl"
                     />
                   </div>
                   <div className="md:basis-[120px] w-full h-full">
                     <img
-                      src={pro.imgMobile}
+                      src={pro.mobileView}
                       alt=""
                       className="object-contain drop-shadow-2xl h-[20rem] w-full md:h-full"
                     />
