@@ -36,7 +36,7 @@ import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
-import danamonOptimalMobile from "../../../assets/thumb/danamonOptimal-mobile.png";
+import danamonOptimalMobile from "../../../assets/gif/test.gif";
 import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
 import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
 import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
@@ -97,9 +97,8 @@ const Home = () => {
       hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
     },
     {
-      name: "Danamon Optimal",
-      description:
-        "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
+      name: "Hino Finance",
+      description: "",
       dekstopView: hinoFinanceDesktop,
       tabletView: hinoFinanceTablet,
       mobileView: hinoFinanceMobile,
