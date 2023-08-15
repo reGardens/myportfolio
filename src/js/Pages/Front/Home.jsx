@@ -36,7 +36,10 @@ import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
-import danamonOptimalMobile from "../../../assets/thumb/danamonOptimal-mobile.png";
+import danamonOptimalMobile from "../../../assets/gif/new.gif";
+import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
+import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
+import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
 import sahurDesktop from "../../../assets/thumb/semurSahur-dekstop.png";
 import sahurTablet from "../../../assets/thumb/semurSahur-tablet.png";
 import sahurMobile from "../../../assets/thumb/semurSahur-mobile.png";
@@ -85,20 +88,28 @@ const Home = () => {
     {
       name: "Danamon Optimal",
       description:
-        "",
+        "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
       dekstopView: danamonOptimalDesktop,
       tabletView: danamonOptimalTablet,
       mobileView: danamonOptimalMobile,
       modalDesc: "Bango Culinary Project 2022",
       url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
-      hashtags: [
-        { link: "Bootstrap", name: "Bootstrap" },
-      ],
+      hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
+    },
+    {
+      name: "Hino Finance",
+      description: "",
+      dekstopView: hinoFinanceDesktop,
+      tabletView: hinoFinanceTablet,
+      mobileView: hinoFinanceMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
+      hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
     },
     {
       name: "30 Resep Semur Semangatkan Sahur",
       description:
-        "Is a recommendation website for special dishes in the month of Ramadan, generated from Instagram stories for a full review",
+        "Is a recommendation website for special dishes in the month of Ramadan, generated from Instagram stories for a full review.",
       dekstopView: sahurDesktop,
       tabletView: sahurTablet,
       mobileView: sahurMobile,
