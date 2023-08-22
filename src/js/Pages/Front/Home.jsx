@@ -3,16 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParallax, Parallax } from "react-scroll-parallax";
 // import { AnimeBGOrange } from "../../Components/Parallax/AnimeBGOrange";
 
-// pages
-import {
-  DescDesktop,
-  AnimeBGOrange,
-  ImageGroot,
-  ImageGw,
-  ImageGwMobile,
-  ImageGrootMobile,
-} from "../../Components/AnimationParallax";
-
 // images
 // import google from "../../../assets/icons/Google.png";
 import gw from "../../../assets/images/gw.webp";
@@ -36,8 +26,7 @@ import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
-import danamonOptimalMobile from "../../../assets/gif/danamonOptimalku-mobile.gif";
-import danamonOptimalMobileNew from "../../../assets/video/new.mp4";
+import danamonOptimalMobile from "../../../assets/video/danamonOptimalku-mobile.mp4";
 import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
 import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
 import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
@@ -48,10 +37,22 @@ import sahurMobile from "../../../assets/thumb/semurSahur-mobile.png";
 // icons
 import { AiOutlineHome } from "react-icons/ai";
 
+// pages
 import {
   RibbonOrange,
   RibbonOrangeReverse,
 } from "../../Components/ribbonOrange";
+import {
+  DescDesktop,
+  AnimeBGOrange,
+  ImageGroot,
+  ImageGw,
+  ImageGwMobile,
+  ImageGrootMobile,
+} from "../../Components/AnimationParallax";
+import MediaComponentMobile from "../../Components/MediaComponentMobile";
+import MediaComponentDekstop from "../../Components/MediaComponentDekstop";
+import MediaComponentTablet from "../../Components/MediaComponentTablet";
 
 const Home = () => {
   const datasSkill = [
@@ -92,7 +93,7 @@ const Home = () => {
         "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
       dekstopView: danamonOptimalDesktop,
       tabletView: danamonOptimalTablet,
-      mobileView: danamonOptimalMobileNew,
+      mobileView: danamonOptimalMobile,
       modalDesc: "Bango Culinary Project 2022",
       url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
       hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
@@ -369,27 +370,16 @@ const Home = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row items-end justify-center gap-10 w-full">
-                  <div className="md:basis-[450px]">
-                    <img
-                      src={pro.dekstopView}
-                      alt=""
-                      className="w-full h-full drop-shadow-2xl "
-                    />
+                  <div className="md:basis-[450px] flex justify-center w-full">
+                    <MediaComponentDekstop type="video" url={pro.dekstopView} />
                   </div>
-                  <div className="md:basis-[260px]">
-                    <img
-                      src={pro.tabletView}
-                      alt=""
-                      className="w-full h-full drop-shadow-2xl"
-                    />
+
+                  <div className="md:basis-[260px] flex justify-center w-full">
+                    <MediaComponentTablet type="video" url={pro.tabletView} />
                   </div>
-                  <div className="md:basis-[120px] w-full h-full">
-                    <video src={pro.mobileView} autoPlay loop muted />
-                    {/* <img
-                      src={pro.mobileView}
-                      alt=""
-                      className="object-contain drop-shadow-2xl h-[20rem] w-full md:h-full"
-                    /> */}
+
+                  <div className="md:basis-[120px] flex justify-center w-full">
+                    <MediaComponentMobile type="video" url={pro.mobileView} />
                   </div>
                 </div>
 
