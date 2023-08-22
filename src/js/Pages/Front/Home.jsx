@@ -37,6 +37,7 @@ import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
 import danamonOptimalMobile from "../../../assets/gif/danamonOptimalku-mobile.gif";
+import danamonOptimalMobileNew from "../../../assets/video/new.mp4";
 import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
 import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
 import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
@@ -91,7 +92,7 @@ const Home = () => {
         "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
       dekstopView: danamonOptimalDesktop,
       tabletView: danamonOptimalTablet,
-      mobileView: danamonOptimalMobile,
+      mobileView: danamonOptimalMobileNew,
       modalDesc: "Bango Culinary Project 2022",
       url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
       hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
@@ -383,11 +384,12 @@ const Home = () => {
                     />
                   </div>
                   <div className="md:basis-[120px] w-full h-full">
-                    <img
+                    <video src={pro.mobileView} autoPlay loop muted />
+                    {/* <img
                       src={pro.mobileView}
                       alt=""
                       className="object-contain drop-shadow-2xl h-[20rem] w-full md:h-full"
-                    />
+                    /> */}
                   </div>
                 </div>
 
