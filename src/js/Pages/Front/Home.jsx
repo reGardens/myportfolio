@@ -26,7 +26,7 @@ import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
-import danamonOptimalMobile from "../../../assets/video/danamonOptimalku-mobile.mp4";
+import danamonOptimalMobile from "../../../assets/video/danamonOptimal-mobile.mp4";
 import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
 import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
 import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
@@ -50,9 +50,11 @@ import {
   ImageGwMobile,
   ImageGrootMobile,
 } from "../../Components/AnimationParallax";
-import MediaComponentMobile from "../../Components/MediaComponentMobile";
-import MediaComponentDekstop from "../../Components/MediaComponentDekstop";
-import MediaComponentTablet from "../../Components/MediaComponentTablet";
+import {
+  MediaComponentDekstop,
+  MediaComponentTablet,
+  MediaComponentMobile,
+} from "../../Components/MediaComponent";
 
 const Home = () => {
   const datasSkill = [
