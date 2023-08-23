@@ -41,7 +41,7 @@ export const MediaComponentTablet = ({ url }) => {
       autoPlay
       loop
       muted
-      className="w-40 h-full rounded-3xl border border-red-500 overflow-hidden"
+      className="w-60 h-full rounded-3xl border border-red-500 overflow-hidden"
     >
       Your browser does not support the video tag.
     </video>
