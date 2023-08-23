@@ -22,11 +22,12 @@ import codeigniter from "../../../assets/icons/codeigniter.png";
 import laravel from "../../../assets/icons/laravel.png";
 import git from "../../../assets/icons/git.png";
 import fjbDesktop from "../../../assets/thumb/fjb-desktop.png";
-import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
+// import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
+import fjbTablet from "../../../assets/video/fjb-2022-compressed.mp4";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
 import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
-import danamonOptimalMobile from "../../../assets/video/DanamonOptimal-mobile-compression.mp4";
+import danamonOptimalMobile from "../../../assets/video/DanamonOptimal-mobile-compressed.mp4";
 import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
 import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
 import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
@@ -76,7 +77,7 @@ const Home = () => {
 
   const project = [
     {
-      name: "Festifal Jajanan Bango",
+      name: "Festifal Jajanan Bango 2022",
       description:
         "Maintenance of the culinary festival website, using jQuery, codeigniter, containing a list of Indonesian culinary delights so that visitors can see what is available at fjb this year.",
       dekstopView: fjbDesktop,
@@ -102,13 +103,17 @@ const Home = () => {
     },
     {
       name: "Hino Finance",
-      description: "",
+      description:
+        "hino's financial website is a company profile, e-commerce, and most importantly a financial website for products that are marketed",
       dekstopView: hinoFinanceDesktop,
       tabletView: hinoFinanceTablet,
       mobileView: hinoFinanceMobile,
       modalDesc: "Bango Culinary Project 2022",
       url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
-      hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
+      hashtags: [
+        { link: "HTML", name: "HTML" },
+        { link: "CSS", name: "CSS" },
+      ],
     },
     {
       name: "30 Resep Semur Semangatkan Sahur",
