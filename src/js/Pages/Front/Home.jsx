@@ -134,20 +134,20 @@ const Home = () => {
       url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
       hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
     },
-    // {
-    //   name: "Danamon Microsite Quiz",
-    //   description:
-    //     "Danamon created a multiple choice quiz website, when finished answering the questions the user will be asked to enter several personal data fields which later in the final result (on the mobile display) will display your character and each character will be different depending on the user's answer.",
-    //   dekstopView: danamonQuizDesktop,
-    //   tabletView: danamonQuizTablet,
-    //   mobileView: danamonQuizMobile,
-    //   modalDesc: "Bango Culinary Project 2022",
-    //   url: "www.optimalku.com",
-    //   hashtags: [
-    //     { link: "VueJS", name: "VueJS" },
-    //     { link: "Laravel", name: "Laravel" },
-    //   ],
-    // },
+    {
+      name: "Danamon Microsite Quiz",
+      description:
+        "Danamon created a multiple choice quiz website, when finished answering the questions the user will be asked to enter several personal data fields which later in the final result (on the mobile display) will display your character and each character will be different depending on the user's answer.",
+      dekstopView: danamonQuizDesktop,
+      tabletView: danamonQuizTablet,
+      mobileView: danamonQuizMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "www.optimalku.com",
+      hashtags: [
+        { link: "VueJS", name: "VueJS" },
+        { link: "Laravel", name: "Laravel" },
+      ],
+    },
     {
       name: "30 Resep Semur Semangatkan Sahur",
       description:
@@ -163,21 +163,21 @@ const Home = () => {
         { link: "miappi", name: "miappi" },
       ],
     },
-    // {
-    //   name: "Indonesia International Motor Show",
-    //   description:
-    //     "",
-    //   dekstopView: sahurDesktop,
-    //   tabletView: sahurTablet,
-    //   mobileView: sahurMobile,
-    //   modalDesc: "Bango Culinary Project 2022",
-    //   url: "https://www.bango.co.id/home.html",
-    //   hashtags: [
-    //     { link: "jQuery", name: "jQuery" },
-    //     { link: "/", name: "codeigniter" },
-    //     { link: "miappi", name: "miappi" },
-    //   ],
-    // },
+    {
+      name: "Indonesia International Motor Show",
+      description:
+        "",
+      dekstopView: sahurDesktop,
+      tabletView: sahurTablet,
+      mobileView: sahurMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.bango.co.id/home.html",
+      hashtags: [
+        { link: "jQuery", name: "jQuery" },
+        { link: "/", name: "codeigniter" },
+        { link: "miappi", name: "miappi" },
+      ],
+    },
   ];
 
   return (
