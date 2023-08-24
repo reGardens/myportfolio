@@ -34,7 +34,7 @@ import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.
 import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
 import danamonOptimalMobile from "../../../assets/video/DanamonOptimal-mobile-compressed.mp4";
 import danamonQuizDesktop from "../../../assets/thumb/danamonQuiz-dekstop.png";
-import danamonQuizTablet from "../../../assets/video/DanamonQuiz-tablet.mp4";
+import danamonQuizTablet from "../../../assets/video/DanamonQuiz-tablet-compressed.mp4";
 import danamonQuizMobile from "../../../assets/thumb/DanamonQuiz-mobile.png";
 import sahurDesktop from "../../../assets/thumb/semurSahur-dekstop.png";
 import sahurTablet from "../../../assets/thumb/semurSahur-tablet.png";
