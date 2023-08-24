@@ -22,15 +22,20 @@ import codeigniter from "../../../assets/icons/codeigniter.png";
 import laravel from "../../../assets/icons/laravel.png";
 import git from "../../../assets/icons/git.png";
 import fjbDesktop from "../../../assets/thumb/fjb-desktop.png";
-// import fjbTablet from "../../../assets/thumb/fjb-tablet.png";
 import fjbTablet from "../../../assets/video/fjb-2022-compressed.mp4";
 import fjbMobile from "../../../assets/thumb/fjb-mobile.png";
-import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
-import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
-import danamonOptimalMobile from "../../../assets/video/DanamonOptimal-mobile-compressed.mp4";
 import hinoFinanceDesktop from "../../../assets/thumb/hinoFinance-dekstop.png";
 import hinoFinanceTablet from "../../../assets/thumb/hinoFinance-tablet.png";
 import hinoFinanceMobile from "../../../assets/thumb/hinoFinance-mobile.png";
+import mgmBoscoDekstop from "../../../assets/thumb/MGMBosco-dekstop.png";
+import mgmBoscoTablet from "../../../assets/thumb/MGMBosco-tablet.png";
+import mgmBoscoMobile from "../../../assets/thumb/MGMBosco-mobile.png";
+import danamonOptimalDesktop from "../../../assets/thumb/danamonOptimal-dekstop.png";
+import danamonOptimalTablet from "../../../assets/thumb/danamonOptimal-tablet.png";
+import danamonOptimalMobile from "../../../assets/video/DanamonOptimal-mobile-compressed.mp4";
+import danamonQuizDesktop from "../../../assets/thumb/danamonQuiz-dekstop.png";
+import danamonQuizTablet from "../../../assets/video/DanamonQuiz-tablet.mp4";
+import danamonQuizMobile from "../../../assets/thumb/DanamonQuiz-mobile.png";
 import sahurDesktop from "../../../assets/thumb/semurSahur-dekstop.png";
 import sahurTablet from "../../../assets/thumb/semurSahur-tablet.png";
 import sahurMobile from "../../../assets/thumb/semurSahur-mobile.png";
@@ -91,17 +96,6 @@ const Home = () => {
       ],
     },
     {
-      name: "Danamon Optimal",
-      description:
-        "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
-      dekstopView: danamonOptimalDesktop,
-      tabletView: danamonOptimalTablet,
-      mobileView: danamonOptimalMobile,
-      modalDesc: "Bango Culinary Project 2022",
-      url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
-      hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
-    },
-    {
       name: "Hino Finance",
       description:
         "hino's financial website is a company profile, e-commerce, and most importantly a financial website for products that are marketed",
@@ -116,9 +110,63 @@ const Home = () => {
       ],
     },
     {
+      name: "MGM Bosco Logistics",
+      description:
+        "create a responsive company profile display with the vuejs engine, mgm bosco keberlanjutan page combines bright blue colors in certain sections which makes it look fresher",
+      dekstopView: mgmBoscoDekstop,
+      tabletView: mgmBoscoTablet,
+      mobileView: mgmBoscoMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://mgmbosco.com/id/sustainability",
+      hashtags: [
+        { link: "VueJS", name: "VueJS" },
+        { link: "Bootstrap", name: "Bootstrap" },
+      ],
+    },
+    {
+      name: "Danamon Optimal",
+      description:
+        "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
+      dekstopView: danamonOptimalDesktop,
+      tabletView: danamonOptimalTablet,
+      mobileView: danamonOptimalMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
+      hashtags: [{ link: "Bootstrap", name: "Bootstrap" }],
+    },
+    {
+      name: "Danamon Microsite Quiz",
+      description:
+        "Danamon created a multiple choice quiz website, when finished answering the questions the user will be asked to enter several personal data fields which later in the final result (on the mobile display) will display your character and each character will be different depending on the user's answer.",
+      dekstopView: danamonQuizDesktop,
+      tabletView: danamonQuizTablet,
+      mobileView: danamonQuizMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "www.optimalku.com",
+      hashtags: [
+        { link: "VueJS", name: "VueJS" },
+        { link: "Laravel", name: "Laravel" },
+      ],
+    },
+    {
       name: "30 Resep Semur Semangatkan Sahur",
       description:
         "Is a recommendation website for special dishes in the month of Ramadan, generated from Instagram stories for a full review.",
+      dekstopView: sahurDesktop,
+      tabletView: sahurTablet,
+      mobileView: sahurMobile,
+      modalDesc: "Bango Culinary Project 2022",
+      url: "https://www.bango.co.id/home.html",
+      hashtags: [
+        { link: "jQuery", name: "jQuery" },
+        { link: "/", name: "codeigniter" },
+        { link: "miappi", name: "miappi" },
+      ],
+    },
+    {
+      name: "Indonesia International Motor Show",
+      description:
+        "",
       dekstopView: sahurDesktop,
       tabletView: sahurTablet,
       mobileView: sahurMobile,
@@ -345,7 +393,7 @@ const Home = () => {
       {/* Project */}
       <div className="bg-defaultBlack text-white py-14 lg:pb-28 pt-18 lg:pt-36 px-4 lg:px-28">
         <div className="py-4 mb-6 lg:mb-12">
-          <p className="text-center font-bold text-title">Project</p>
+          <p className="text-center font-bold text-title">Projects</p>
         </div>
 
         <div className="grid gap-28">
@@ -393,6 +441,7 @@ const Home = () => {
                 <div className="flex justify-center mt-12">
                   <a
                     href={pro.url}
+                    target="_blank"
                     className="border-[1px] border-customOrange hover:border-transparent hover:text-customOrange transition-colors"
                   >
                     <p className="py-3 px-6 md:px-7 text-xs md:text-base leading-none hover:font-semibold">
