@@ -21,9 +21,9 @@
     {
         "name": "Hino Finance",
         "description": "hino's financial website is a company profile, e-commerce, and most importantly a financial website for products that are marketed",
-        "dekstopView": "./src/assets/thumb/hinoFinance-dekstop.png",
-        "tabletView": "./src/assets/thumb/hinoFinance-tablet.png",
-        "mobileView": "./src/assets/thumb/hinoFinance-mobile.png",
+        "dekstopView": "../assets/thumb/hinoFinance-dekstop.png",
+        "tabletView": "../assets/thumb/hinoFinance-tablet.png",
+        "mobileView": "../assets/thumb/hinoFinance-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
         "hashtags": [
@@ -40,9 +40,9 @@
     {
         "name": "MGM Bosco Logistics",
         "description": "create a responsive company profile display with the vuejs engine, mgm bosco keberlanjutan page combines bright blue colors in certain sections which makes it look fresher",
-        "dekstopView": "./src/assets/thumb/MGMBosco-dekstop.png",
-        "tabletView": "./src/assets/thumb/MGMBosco-tablet.png",
-        "mobileView": "./src/assets/thumb/MGMBosco-mobile.png",
+        "dekstopView": "../assets/thumb/MGMBosco-dekstop.png",
+        "tabletView": "../assets/thumb/MGMBosco-tablet.png",
+        "mobileView": "../assets/thumb/MGMBosco-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://mgmbosco.com/id/sustainability",
         "hashtags": [
@@ -59,9 +59,9 @@
     {
         "name": "Danamon Optimal",
         "description": "is a company profile by DanamonOptimumku website, and is made only as a static SPA.",
-        "dekstopView": "./src/assets/thumb/danamonOptimal-dekstop.png",
-        "tabletView": "./src/assets/thumb/danamonOptimal-tablet.png",
-        "mobileView": "./src/assets/video/DanamonOptimal-mobile-compressed.mp4",
+        "dekstopView": "../assets/thumb/danamonOptimal-dekstop.png",
+        "tabletView": "../assets/thumb/danamonOptimal-tablet.png",
+        "mobileView": "../assets/video/DanamonOptimal-mobile-compressed.mp4",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
         "hashtags": [
@@ -74,9 +74,9 @@
     {
         "name": "Danamon Microsite Quiz",
         "description": "Danamon created a multiple choice quiz website, when finished answering the questions the user will be asked to enter several personal data fields which later in the final result (on the mobile display) will display your character and each character will be different depending on the user's answer.",
-        "dekstopView": "./src/assets/thumb/DanamonQuiz-dekstop.png",
-        "tabletView": "./src/assets/video/DanamonQuiz-tablet-compressed.mp4",
-        "mobileView": "./src/assets/thumb/DanamonQuiz-mobile.png",
+        "dekstopView": "../assets/thumb/DanamonQuiz-dekstop.png",
+        "tabletView": "../assets/video/DanamonQuiz-tablet-compressed.mp4",
+        "mobileView": "../assets/thumb/DanamonQuiz-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "www.optimalku.com",
         "hashtags": [
@@ -93,9 +93,9 @@
     {
         "name": "30 Resep Semur Semangatkan Sahur",
         "description": "Is a recommendation website for special dishes in the month of Ramadan, generated from Instagram stories for a full review.",
-        "dekstopView": "./src/assets/thumb/semurSahur-dekstop.png",
-        "tabletView": "./src/assets/thumb/semurSahur-tablet.png",
-        "mobileView": "./src/assets/thumb/semurSahur-mobile.png",
+        "dekstopView": "../assets/thumb/semurSahur-dekstop.png",
+        "tabletView": "../assets/thumb/semurSahur-tablet.png",
+        "mobileView": "../assets/thumb/semurSahur-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.bango.co.id/home.html",
         "hashtags": [
@@ -116,9 +116,9 @@
     {
         "name": "Danamon IIMS",
         "description": "Danamon entrusted me to create a microsite for the Indonesia International Motor Show",
-        "dekstopView": "./src/assets/thumb/danamonIIMS-desktop.png",
-        "tabletView": "./src/assets/thumb/danamonIIMS-tablet.png",
-        "mobileView": "./src/assets/thumb/danamonIIMS-mobile.png",
+        "dekstopView": "../assets/thumb/danamonIIMS-desktop.png",
+        "tabletView": "../assets/thumb/danamonIIMS-tablet.png",
+        "mobileView": "../assets/thumb/danamonIIMS-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.bango.co.id/home.html",
         "hashtags": [
@@ -135,9 +135,9 @@
     {
         "name": "Danamon Spekta",
         "description": "The Danamon Spekta mockup that I made is almost the same as the other projects, simple and prioritizing the product being offered, and for Danamon Spekta this is a Single Page Application",
-        "dekstopView": "./src/assets/thumb/danamonSpekta-desktop.png",
-        "tabletView": "./src/assets/thumb/danamonSpekta-tablet.png",
-        "mobileView": "./src/assets/thumb/danamonSpekta-mobile.png",
+        "dekstopView": "../assets/thumb/danamonSpekta-desktop.png",
+        "tabletView": "../assets/thumb/danamonSpekta-tablet.png",
+        "mobileView": "../assets/thumb/danamonSpekta-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.bango.co.id/home.html",
         "hashtags": [
@@ -154,9 +154,9 @@
     {
         "name": "Danamon Spekta",
         "description": "The Danamon Spekta mockup that I made is almost the same as the other projects, simple and prioritizing the product being offered, and for Danamon Spekta this is a Single Page Application",
-        "dekstopView": "./src/assets/thumb/danamonSpekta-desktop.png",
-        "tabletView": "./src/assets/thumb/danamonSpekta-tablet.png",
-        "mobileView": "./src/assets/thumb/danamonSpekta-mobile.png",
+        "dekstopView": "../assets/thumb/danamonSpekta-desktop.png",
+        "tabletView": "../assets/thumb/danamonSpekta-tablet.png",
+        "mobileView": "../assets/thumb/danamonSpekta-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.bango.co.id/home.html",
         "hashtags": [
