@@ -2,9 +2,9 @@
     {
         "name": "Festifal Jajanan Bango 2022",
         "description": "Maintenance of the culinary festival website, using jQuery, codeigniter, containing a list of Indonesian culinary delights so that visitors can see what is available at fjb this year.",
-        "dekstopView": "../../src/assets/thumb/fjb-desktop.png",
-        "tabletView": "../../src/assets/video/fjb-2022-compressed.mp4",
-        "mobileView": "../../src/assets/thumb/fjb-mobile.png",
+        "dekstopView": "/src/assets/thumb/fjb-desktop.png",
+        "tabletView": "/src/assets/video/fjb-2022-compressed.mp4",
+        "mobileView": "/src/assets/thumb/fjb-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
         "url": "https://www.warisankuliner.com/fjb",
         "hashtags": [
