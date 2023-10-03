@@ -23,7 +23,7 @@ import laravel from "../../../assets/icons/laravel.png";
 import git from "../../../assets/icons/git.png";
 
 // data
-import project from '../../../../public/data/project.json'
+import project from '../../../data/project.json'
 
 // icons
 import { AiOutlineHome } from "react-icons/ai";
