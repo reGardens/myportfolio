@@ -25,7 +25,7 @@
         "tabletView": "../assets/thumb/hinoFinance-tablet.png",
         "mobileView": "../assets/thumb/hinoFinance-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
-        "url": "https://www.danamon.co.id/id/Personal/Danamon-Optimal",
+        "url": "#",
         "hashtags": [
             {
                 "link": "html",
@@ -73,7 +73,7 @@
     },
     {
         "name": "Danamon Microsite Quiz",
-        "description": "Danamon created a multiple choice quiz website, when finished answering the questions the user will be asked to enter several personal data fields which later in the final result (on the mobile display) will display your character and each character will be different depending on the user's answer.",
+        "description": "Danamon created a multiple choice quiz website for users, in the example of the tablet display animation below when the user makes a selection and has finished answering the questions the user will be asked to enter several columns of personal data which later in the final result (on the cellphone display) will display your character and each character. will vary depending on the answerer's choice.",
         "dekstopView": "../assets/thumb/DanamonQuiz-dekstop.png",
         "tabletView": "../assets/video/DanamonQuiz-tablet-compressed.mp4",
         "mobileView": "../assets/thumb/DanamonQuiz-mobile.png",
@@ -120,7 +120,7 @@
         "tabletView": "../assets/thumb/danamonIIMS-tablet.png",
         "mobileView": "../assets/thumb/danamonIIMS-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
-        "url": "https://www.bango.co.id/home.html",
+        "url": "https://www.danamon.co.id/id/site/Danamon-IIMS-Surabaya",
         "hashtags": [
             {
                 "link": "html",
@@ -139,7 +139,7 @@
         "tabletView": "../assets/thumb/danamonSpekta-tablet.png",
         "mobileView": "../assets/thumb/danamonSpekta-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
-        "url": "https://www.bango.co.id/home.html",
+        "url": "https://www.danamon.co.id/id/Personal/danamonhadiahberuntun?utm_campaign=danamonhadiahberuntun&utm_source=Homebanner_DCW&utm_medium=&utm_term=danamonhadiahberuntun&utm_content=danamonhadiahberuntun_30092022",
         "hashtags": [
             {
                 "link": "html",
@@ -153,20 +153,20 @@
     },
     {
         "name": "Danamon Booking Optimalku",
-        "description": "",
-        "dekstopView": "../assets/thumb/danamonSpekta-desktop.png",
-        "tabletView": "../assets/thumb/danamonSpekta-tablet.png",
-        "mobileView": "../assets/thumb/danamonSpekta-mobile.png",
+        "description": "is a company website consultation with the aim of making it easier for users when they want to order a queue number to ask questions or consult without the hassle of having to come, then it will be sent via email to the consultation registrant.",
+        "dekstopView": "../assets/thumb/danamonBO-dekstop.png",
+        "tabletView": "../assets/thumb/danamonBO-tablet.png",
+        "mobileView": "../assets/thumb/danamonBO-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
-        "url": "https://www.bango.co.id/home.html",
+        "url": "https://booking.optimalku.com",
         "hashtags": [
             {
-                "link": "html",
-                "name": "html"
+                "link": "vuejs",
+                "name": "vuejs"
             },
             {
-                "link": "css",
-                "name": "css"
+                "link": "laravel",
+                "name": "laravel"
             }
         ]
     }
