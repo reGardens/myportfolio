@@ -120,7 +120,7 @@
         "tabletView": "../assets/thumb/danamonIIMS-tablet.png",
         "mobileView": "../assets/thumb/danamonIIMS-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
-        "url": "https://www.danamon.co.id/id/site/Danamon-IIMS-Surabaya",
+        "url": "https://danamonhut.co.id/",
         "hashtags": [
             {
                 "link": "html",
@@ -186,6 +186,21 @@
             {
                 "link": "laravel",
                 "name": "laravel"
+            }
+        ]
+    },
+    {
+        "name": "Ristra",
+        "description": "Revamp the website based on the old machine and use a new machine or what is usually called \"Technology Migration\", in this project I was only assigned to install and make the appearance as similar as possible to the previous one.",
+        "dekstopView": "../assets/thumb/ristra-dekstop.png",
+        "tabletView": "../assets/thumb/ristra-tablet.png",
+        "mobileView": "../assets/thumb/ristra-mobile.png",
+        "modalDesc": "Bango Culinary Project 2022",
+        "url": "https://booking.optimalku.com",
+        "hashtags": [
+            {
+                "link": "reactjs",
+                "name": "reactjs"
             }
         ]
     }
