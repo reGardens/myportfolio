@@ -169,5 +169,24 @@
                 "name": "laravel"
             }
         ]
+    },
+    {
+        "name": "Danamon's Anniversary",
+        "description": "on its 67th birthday, Danamon invites customers through a Danamon birthday website, who together celebrate their birthday on July 16 2023. Not only that, Danamon also provides several special offers such as video examples on the element gallery javascript concept tablet display.",
+        "dekstopView": "../assets/thumb/danamonHUT-dekstop.png",
+        "tabletView": "../assets/video/danamonHUT-tablet.mp4",
+        "mobileView": "../assets/thumb/danamonHUT-mobile.png",
+        "modalDesc": "Bango Culinary Project 2022",
+        "url": "https://booking.optimalku.com",
+        "hashtags": [
+            {
+                "link": "reactjs",
+                "name": "reactjs"
+            },
+            {
+                "link": "laravel",
+                "name": "laravel"
+            }
+        ]
     }
 ]
