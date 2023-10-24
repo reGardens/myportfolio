@@ -59,7 +59,7 @@ const Home = () => {
       </h1>
 
       {/* Banner Dekstop */}
-      <header className="bg-defaultBlack hidden md:flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-hidden">
+      <header id="inDekstop" className="bg-defaultBlack hidden md:flex justify-between gap-60 mx-auto max-h-[35rem] relative !overflow-hidden">
         <AnimeBGOrange />
 
         {/* image me */}
@@ -122,7 +122,7 @@ const Home = () => {
       </header>
 
       {/* Banner Mobile */}
-      <header className="block bg-customOrange md:hidden min-h-[37rem] h-full relative overflow-hidden">
+      <header id="inMobile" className="block bg-customOrange md:hidden min-h-[37rem] h-full relative overflow-hidden">
         {/* image me mobile */}
         <ImageGwMobile>
           <img src={gw} alt="" />

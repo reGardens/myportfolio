@@ -73,7 +73,7 @@
     },
     {
         "name": "Danamon Microsite Quiz",
-        "description": "Danamon created a multiple choice quiz website for users, in the example of the tablet display animation below when the user makes a selection and has finished answering the questions the user will be asked to enter several columns of personal data which later in the final result (on the cellphone display) will display your character and each character. will vary depending on the answerer's choice.",
+        "description": "Danamon created a multiple choice quiz website for users, in the example of the tablet display animation below when the user makes a selection and has finished answering the questions the user will be asked to enter several columns of personal data which later in the final result (on the phone display) will display your character and each character. will vary depending on the answerer's choice.",
         "dekstopView": "../assets/thumb/DanamonQuiz-dekstop.png",
         "tabletView": "../assets/video/DanamonQuiz-tablet-compressed.mp4",
         "mobileView": "../assets/thumb/DanamonQuiz-mobile.png",
@@ -177,7 +177,7 @@
         "tabletView": "../assets/video/danamonHUT-tablet.mp4",
         "mobileView": "../assets/thumb/danamonHUT-mobile.png",
         "modalDesc": "Bango Culinary Project 2022",
-        "url": "https://booking.optimalku.com",
+        "url": "",
         "hashtags": [
             {
                 "link": "reactjs",

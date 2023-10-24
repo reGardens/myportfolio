@@ -7,6 +7,28 @@
   src: url("../assets/fonts/FuturaLT.ttf");
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* ------ */
+
 .bgSection {
   background-image: url("../assets/images/background01.webp");
   background-repeat: no-repeat;

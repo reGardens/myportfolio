@@ -10,11 +10,33 @@ const Error404 = () => {
         <img src={pages404} alt="pages404" className="" />
 
         <div className="absolute bottom-24 left-0 w-full flex justify-center">
-          <Link to="/" className="bg-[#FCFCAA] rounded-lg">
+          {/* if finish use it */}
+          {/* <Link to="/" className="bg-[#FCFCAA] rounded-lg">
             <p className="py-2 px-3 font-extrabold font-futura text-[#002455]">
               Back To Home
             </p>
-          </Link>
+          </Link> */}
+          {/* ------ */}
+          {/* and destroy it */}
+          <a href="#inDekstop" className="hidden md:block bg-[#FCFCAA] rounded-lg">
+            <p className="py-2 px-3 font-extrabold font-futura text-[#002455]">
+              <span className="font-normal">
+                This page is currently under maintenance
+              </span>
+              <br />
+              if you want to view it please click or scroll
+            </p>
+          </a>
+          <a href="#inMobile" className="block md:hidden bg-[#FCFCAA] rounded-lg">
+            <p className="py-2 px-3 font-extrabold font-futura text-[#002455]">
+              <span className="font-normal">
+                This page is currently under maintenance
+              </span>
+              <br />
+              if you want to view it please click or scroll
+            </p>
+          </a>
+          {/* ------ */}
         </div>
       </div>
     </div>
