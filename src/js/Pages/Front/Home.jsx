@@ -176,7 +176,7 @@ const Home = () => {
       </header>
 
       {/* Floating Menu */}
-      <div className="fixed bottom-2 left-0 w-full z-50">
+      <div className="fixed bottom-2 left-0 w-full z-50 hidden">
         <ul className="flex justify-center gap-1.5 md:gap-16">
           <li className="listMenu w-[3.8rem] md:w-[8rem]">
             <div className="cursor-pointer py-1 md:p-3 flex flex-col items-center justify-center h-full bg-customOrange">
