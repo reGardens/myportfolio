@@ -18,8 +18,8 @@ const Error404 = () => {
               <span className="font-normal">
                 This page is currently under maintenance
               </span>
-              <br />
-              if you want to view it please click or scroll
+              {/* <br />
+              if you want to view it please click or scroll */}
             </p>
           </a>
           <a href="#inMobile" className="block md:hidden bg-[#FCFCAA] rounded-lg">
