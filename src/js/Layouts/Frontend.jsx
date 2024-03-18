@@ -8,7 +8,7 @@ const Frontend = () => {
     // <SmoothScroll>
     <div className="overflow-x-hidden">
       <Error404 />
-      <Home />
+      {/* <Home /> */}
     </div>
     // </SmoothScroll>
   );
